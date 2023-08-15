@@ -28,7 +28,7 @@ export default function SignIn() {
         <div className="md:w-[67%] lg:w-[50%] mb-12 md:mb-6">
           <img
             src="https://plus.unsplash.com/premium_photo-1677093906053-037cef85dba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNlY3VyaXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-            alt="sign-in-image"
+            alt="sign-in"
             className="w-full rounded-2xl"
           />
         </div>

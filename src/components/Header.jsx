@@ -7,7 +7,6 @@ export default function Header() {
 
   const findPath = (route) => {
     if (route === location.pathname) {
-      console.log(route, location.pathname);
       return true;
     }
   };
@@ -27,7 +26,7 @@ export default function Header() {
           <ul className="flex space-x-10">
             <li
               className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${
-                findPath("/") && "text-black border-b-red-700"
+                findPath("/") && "text-black border-b-red-600"
               }`}
               onClick={() => navigate("/")}
             >
@@ -46,7 +45,7 @@ export default function Header() {
             </li>
             <li
               className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${
-                findPath("/sign-in") && "text-black border-b-red-500"
+                findPath("/sign-in") && "text-black border-b-red-600"
               }`}
               onClick={() => navigate("/sign-in")}
             >
