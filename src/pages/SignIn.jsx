@@ -13,7 +13,7 @@ export default function SignIn() {
   });
 
   const { email, password } = formData;
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -24,11 +24,13 @@ export default function SignIn() {
         email,
         password
       );
-      if (userCredentials.user){
-        navigate("/")
+      toast.success("Login Successful");
+      if (userCredentials.user) {
+        navigate("/");
       }
     } catch (error) {
-      toast.error(error, "Something Ocurred");
+      toast.error("Something Ocurred");
+      console.log(error);
     }
   };
 
