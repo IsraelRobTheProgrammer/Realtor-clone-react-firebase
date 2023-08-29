@@ -4,6 +4,7 @@ import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import ForgotPassword from "./pages/ForgotPassword";
+import Listing from "./pages/Listing";
 import Offers from "./pages/Offers";
 import Header from "./components/header";
 import Private from "./components/privateroute";
@@ -25,6 +26,8 @@ function App() {
             <Route path="/profile" element={<Private />}>
               <Route path="/profile" element={<Profile />} />
             </Route>
+            <Route path="/create-listing" element={<Listing />} />
+
           </Routes>
         </Router>
         <ToastContainer
